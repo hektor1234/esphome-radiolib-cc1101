@@ -7,7 +7,7 @@ esphome:
 external_components:
   - source:
       type: git
-      url: https://github.com/juanboro/esphome-radiolib-cc1101
+      url: https://github.com/hektor1234/esphome-radiolib-cc1101
 
 packages:
   cc1101_controls: !include cc1101-controls.yaml
