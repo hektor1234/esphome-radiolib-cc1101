@@ -23,7 +23,7 @@ remote_receiver:
   - id: rf_receiver
     idle: 10ms
     pin:
-      number: 32 # This is also GDO0
+      number: 12 # This is also GDO0
       allow_other_uses: true
       id: cc1101_gd0_recv
 
@@ -34,7 +34,7 @@ remote_receiver:
 remote_transmitter:
   - id: rf_transmitter
     pin:
-      number: 32 # This is also GDO0
+      number: 12 # This is also GDO0
       allow_other_uses: true
       id: cc1101_gd0_xmit
 
@@ -56,11 +56,11 @@ radiolib_cc1101:
 
   # optionally define rx_pin to allow monitoring rx rssi
   rx_pin:
-    number: 32 # This is CC1101 GDO0 pin 3
+    number: 12 # This is CC1101 GDO0 pin 3
     allow_other_uses: true
 
 #  other optional settings.. (use control settings to verify they work and then set)
-  filter: 468khz # RX filter BW (58-812kHz)
+  filter: 868khz # RX filter BW (58-812kHz)
   bitrate: 40 # bitrate (0.025-600kbps)
   reg_agcctrl0: 0xb2 # agcctrol0 register setting
   reg_agcctrl1: 0x00 # agcctrol1 register setting
